@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>ژورنال آهنگ</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #fdf6e3;
+            padding: 2rem;
+            max-width: 600px;
+            margin: auto;
+            direction: rtl;
+        }
+        h1 {
+            text-align: center;
+            color: #2e3d49;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 1rem;
+            margin-bottom: 0.3rem;
+        }
+        input, textarea, button {
+            padding: 0.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ccc
+        }
+        button {
+            margin-top: 1.5rem;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>جستجوی آهنگ</h1>
+    <form method="POST">
+        <label for="song_title">اسم آهنگ:</label>
+        <input type="text" id="song_title" name="song_title" required>
+
+        <label for="artist">خواننده:</label>
+        <input type="text" id="artist" name="artist" required>
+
+        <button type="submit">جستجو</button>
+    </form>
+</body>
+</html>
